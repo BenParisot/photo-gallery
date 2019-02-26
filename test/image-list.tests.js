@@ -9,13 +9,13 @@ test('create image list as template using interpolation', function(assert) {
         'description': 'A unicorn and a narwhal nuzzling their horns',
         'keyword': 'narwhal',
         'horns': 1
-    }
+    };
     const expected = `<li>
     <h2>${image.title}</h2>
     <img src="${image.url}">
     <p>${image.description}</p>
     <p id="horns">Horn Count: ${image.horns}</p>
-    </li>`
+    </li>`;
     const result = makeHTMLTemplate(image);
     assert.htmlEqual(result, expected);
 });

@@ -1,5 +1,3 @@
-import './header.tests.js';
-
 /* eslint-disable */
 const jsdom = require("jsdom");
 const { JSDOM } = jsdom;
