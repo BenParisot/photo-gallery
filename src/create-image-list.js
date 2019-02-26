@@ -1,6 +1,6 @@
 function makeHTMLTemplate(image) {
     const template = document.createElement('template');
-    template.innerHTML =  `<li>
+    template.innerHTML = `<li>
     <h2>${image.title}</h2>
     <img src="${image.url}">
     <p>${image.description}</p>
