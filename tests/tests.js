@@ -12,9 +12,11 @@ test('create image list as template using interpolation', function(assert) {
         'horns': 1
     }
     const expected = `<li>
-    <h2>UniWhal</h2>
-    <img src="http://3.bp.blogspot.com/_DBYF1AdFaHw/TE-f0cDQ24I/AAAAAAAACZg/l-FdTZ6M7z8/s1600/Unicorn_and_Narwhal_by_dinglehopper.jpg">
-</li>`
+    <h2>${image.title}</h2>
+    <img src="${image.url}">
+    <p>${image.description}</p>
+    <p id="horns">Horn Count: ${image.horns}</p>
+    </li>`
     const result = makeHTMLTemplate(image);
     assert.htmlEqual(result, expected);
 });

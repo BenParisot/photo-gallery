@@ -3,7 +3,9 @@ function makeHTMLTemplate(image) {
     template.innerHTML =  `<li>
     <h2>${image.title}</h2>
     <img src="${image.url}">
-</li>`;
+    <p>${image.description}</p>
+    <p id="horns">Horn Count: ${image.horns}</p>
+    </li>`;
     const dom = template.content;
     return dom;
 }
