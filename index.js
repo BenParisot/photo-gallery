@@ -15,6 +15,5 @@ images.forEach(item => {
     imageListNode.appendChild(dom);
 });
 
-console.log(footerNode);
 const footerDOM = makeFooter();
 footerNode.appendChild(footerDOM);
