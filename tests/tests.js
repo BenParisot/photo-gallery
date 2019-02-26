@@ -1,15 +1,7 @@
 import './html-equal.js';
-const test = QUnit.test;
+import makeHTMLTemplate from '../src/create-image-list.js';
 
-function makeHTMLTemplate(image) {
-    const template = document.createElement('template');
-    template.innerHTML =  `<li>
-    <h2>${image.title}</h2>
-    <img src="${image.url}">
-</li>`;
-    const dom = template.content;
-    return dom;
-}
+const test = QUnit.test;
 
 test('create image list as template using interpolation', function(assert) {
     const image = {
