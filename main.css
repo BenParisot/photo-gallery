@@ -1,3 +1,29 @@
+html {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Open Sans', sans-serif;
+
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    background: url('https://66.media.tumblr.com/01d0375439e170c98ee2b8e0d8ddf968/tumblr_nqwek56xcn1r2k0nko1_400.gif');
+    color: #7ec6a2;
+    padding: 15px 0px;
+    font-family: 'Rock Salt', cursive;
+    font-size: 42px;  
+    -webkit-text-stroke: 1px white;
+    
+    
+}
 #image-list {
 }
 
@@ -23,3 +49,14 @@
     width: 100%;
     height: 120px;
 }
+
+footer {
+    display: flex;
+    justify-content: center;
+    background: lightpink;
+    padding: 25px 0px;
+    margin-top: 20px;
+    font-style: italic;
+    font-weight: bold;
+}
+
